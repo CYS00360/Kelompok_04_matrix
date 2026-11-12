@@ -1,6 +1,6 @@
 class Matrix:
     
-    def _init_(self, matrix_string):
+    def __init__(self, matrix_string):
 
         self.data = []
 
@@ -18,10 +18,10 @@ class Matrix:
 
             self.data.append(baris_angka)
             
-     def row(self, index):
+    def row(self, index):
         return self.data[index - 1]
    
-     def column(self, index):
+    def column(self, index):
 
         hasil = []
 
