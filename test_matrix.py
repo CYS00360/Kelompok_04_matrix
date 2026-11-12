@@ -62,5 +62,5 @@ class TestMatrix(unittest.TestCase):
         self.assertEqual(hasil, [11, 33, 55])
 
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     unittest.main(verbosity=2)
