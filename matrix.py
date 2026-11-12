@@ -17,6 +17,17 @@ class Matrix:
           
 
             self.data.append(baris_angka)
-        
+            
+     def row(self, index):
+        return self.data[index - 1]
+   
+     def column(self, index):
+
+        hasil = []
+
+        for baris in self.data:
+            hasil.append(baris[index - 1])
+
+        return hasil
 
     
