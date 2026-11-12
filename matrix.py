@@ -8,7 +8,7 @@ class Matrix:
 
         for baris in daftar_baris:
 
-            daftar_angka = baris.split()
+            daftar_angka = baris.split(' ')
 
             baris_angka = []
 
