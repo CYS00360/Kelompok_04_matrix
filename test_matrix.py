@@ -45,3 +45,22 @@ class TestMatrix(unittest.TestCase):
         hasil = m.column(2)
         print("column(2) =", hasil)
         self.assertEqual(hasil, [1903, 3, 4])
+
+
+    # Dua kasus pengujian tambahan
+
+    def test_row_5(self):
+        m = Matrix("10 20 30\n40 50 60\n70 80 90")
+        hasil = m.row(3)
+        print("row(3) =", hasil)
+        self.assertEqual(hasil, [70, 80, 90])
+
+    def test_column_4(self):
+        m = Matrix("11 22\n33 44\n55 66")
+        hasil = m.column(1)
+        print("column(1) =", hasil)
+        self.assertEqual(hasil, [11, 33, 55])
+
+
+if _name_ == "_main_":
+    unittest.main(verbosity=2)
